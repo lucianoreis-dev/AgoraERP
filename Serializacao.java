@@ -17,7 +17,6 @@ class Serializa
     public static void main(String[] args)
             throws IOException
         {
-        
             User user1 = new User("usuario@hotmail.com", 2020, 123);
             User user2 = new User("usuario2@hotmail.com", 2020, 123);
 
