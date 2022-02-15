@@ -8,7 +8,6 @@ import java.io.ObjectInputStream;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-
 /**
  * @author : reis
  * @created : 2022-02-14
@@ -18,16 +17,12 @@ class Serializa
     public static void main(String[] args)
             throws IOException
         {
-            User user1 = new User("marped_be@hotmail.com", 2020, 123);
-            User user2 = new User("lfurtado@me.com", 2021, 321);
-            User user3 = new User("lele@me.com", 2022, 111);
+            User user1 = new User("usuario@hotmail.com", 2020, 123);
 
             ObjectOutputStream oos = new ObjectOutputStream(
                     new FileOutputStream("user.ser"));
 
             oos.writeObject(user1);
-            oos.writeObject(user2);
-            oos.writeObject(user3);
 
             oos.flush();
             oos.close();
